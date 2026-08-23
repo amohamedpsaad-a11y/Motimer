@@ -5,114 +5,200 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — Motimer</title>
 <style>
-:root{
---bg:#ffffff; --text:#1a1a1a; --muted:#5a5a5a; --accent:#2563eb; --border:#e5e7eb;
-}
-*{box-sizing:border-box}
-body{
-margin:0; padding:0; background:var(--bg); color:var(--text);
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-line-height:1.65;
-}
-.wrap{max-width:760px;margin:0 auto;padding:56px 24px 96px}
-h1{font-size:1.9rem;margin-bottom:4px}
-.updated{color:var(--muted);font-size:0.9rem;margin-bottom:36px}
-h2{font-size:1.25rem;margin-top:2.4rem;padding-bottom:6px;border-bottom:1px solid var(--border)}
-h3{font-size:1.05rem;margin-top:1.6rem}
-p,li{color:#333}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-ul{padding-left:1.3rem}
-code{background:#f3f4f6;padding:2px 6px;border-radius:4px;font-size:0.9em}
-.box{background:#f8fafc;border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin:20px 0}
-footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--border);color:var(--muted);font-size:0.85rem}
+  :root{
+    --ink:#1a1d24;
+    --sub:#5b6270;
+    --line:#e6e8ec;
+    --bg:#fafafa;
+    --card:#ffffff;
+    --accent:#3d6ff2;
+    --accent-soft:#eef3ff;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.65;
+  }
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:64px 24px 96px;
+  }
+  .eyebrow{
+    color:var(--accent);
+    font-weight:600;
+    font-size:13px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    margin-bottom:12px;
+  }
+  h1{
+    font-size:34px;
+    line-height:1.2;
+    margin:0 0 8px;
+    letter-spacing:-0.01em;
+  }
+  .updated{
+    color:var(--sub);
+    font-size:14px;
+    margin-bottom:40px;
+  }
+  .lede{
+    background:var(--accent-soft);
+    border:1px solid #d9e4ff;
+    border-radius:12px;
+    padding:20px 22px;
+    margin-bottom:40px;
+    font-size:15px;
+  }
+  h2{
+    font-size:20px;
+    margin:48px 0 12px;
+    padding-top:8px;
+    border-top:1px solid var(--line);
+  }
+  h1 + .updated + .lede + h2:first-of-type{border-top:none;padding-top:0;}
+  h3{
+    font-size:16px;
+    margin:24px 0 8px;
+    color:var(--ink);
+  }
+  p{margin:0 0 14px; color:#2b2f38;}
+  ul{margin:0 0 16px; padding-left:22px;}
+  li{margin-bottom:8px; color:#2b2f38;}
+  a{color:var(--accent); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  strong{color:var(--ink);}
+  .contact-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:20px 22px;
+    margin-top:12px;
+  }
+  .contact-card p{margin:4px 0;}
+  .footnote{
+    margin-top:56px;
+    padding-top:20px;
+    border-top:1px solid var(--line);
+    color:var(--sub);
+    font-size:13px;
+    font-style:italic;
+  }
+  code{
+    background:#f0f1f4;
+    padding:1px 6px;
+    border-radius:4px;
+    font-size:13px;
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
-<h1>Privacy Policy for Motimer</h1>
-<div class="updated">Last updated: August 22, 2026</div>
-<p>Motimer ("the Extension," "we," "our") is a browser extension that helps users track task timing, submission history, and productivity on TryRating.com. This Privacy Policy explains what information Motimer accesses, how it is used, and the choices available to you.</p>
-<p>If you have questions about this policy, contact the developer at <a href="mailto:mohamedsaadgt@gmail.com">mohamedsaadgt@gmail.com</a>.</p>
 
-<h2>1. Summary</h2>
-<p>Motimer is designed around a simple principle: <strong>your data stays yours</strong>.</p>
-<div class="box">
-<ul>
-<li>All task and timing data is stored <strong>locally in your browser</strong> using Chrome's extension storage.</li>
-<li>If you choose to connect Google Drive, your data is backed up <strong>only to your own private Google Drive app-data space</strong> — a hidden folder tied to this extension that no other app, and no server operated by us, can access.</li>
-<li>Motimer does <strong>not</strong> operate any backend server. There is no company database that receives, stores, or processes your personal data.</li>
-<li>Motimer does <strong>not</strong> sell, rent, or share your data with third parties, and does not use your data for advertising.</li>
-</ul>
-</div>
+  <div class="eyebrow">Motimer</div>
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: August 23, 2026</div>
 
-<h2>2. Information We Access and Why</h2>
-<h3>2.1 Task and timing data (stored locally)</h3>
-<p>When you use TryRating.com with Motimer installed, the Extension reads publicly visible page content (such as Task ID, Request ID, task type, and estimated response time) to:</p>
-<ul>
-<li>Start and stop timers automatically.</li>
-<li>Record submission history for your personal dashboard.</li>
-<li>Show ERT ("Estimated Rating Time") warnings and reminders.</li>
-</ul>
-<p>This information is stored <strong>only in your local browser storage</strong> (<code>chrome.storage.local</code>). It is never transmitted to any server we control.</p>
+  <div class="lede">
+    Motimer ("the Extension," "we," "our") is a browser extension that helps users track task timing, submission history, and productivity on TryRating.com. This Privacy Policy explains what information Motimer accesses, how it is used, and the choices available to you.
+    <br><br>
+    If you have questions about this policy, contact the developer at <a href="mailto:privacy@motimer.online">privacy@motimer.online</a>.
+  </div>
 
-<h3>2.2 Google Account information (optional — only if you connect Google)</h3>
-<p>Motimer can optionally connect to your Google Account to enable backup features. This requires your explicit, separate consent via Google's sign-in screen, and can be disconnected at any time from the Motimer settings page.</p>
-<p><strong>a) Google Drive backup (<code>drive.appdata</code> scope)</strong></p>
-<ul>
-<li>Used to back up and restore your task history, settings, and notes.</li>
-<li>Data is written <strong>only</strong> to your Google Drive's hidden "Application Data" folder — a private space associated exclusively with this extension. You cannot see or browse this folder from the normal Google Drive interface, and no other application can read it.</li>
-<li>This is a direct connection between your browser and Google's servers. Motimer's developer never receives, stores, or has access to a copy of this data.</li>
-</ul>
-<p><strong>b) Basic profile info (<code>userinfo.email</code> scope)</strong></p>
-<ul>
-<li>Used only to display which Google account is currently connected inside the Extension's settings UI (e.g., "Connected as you@example.com").</li>
-</ul>
+  <h2>1. Summary</h2>
+  <p>Motimer is designed around a simple principle: <strong>your data stays yours</strong>.</p>
+  <ul>
+    <li>All task and timing data is stored <strong>locally in your browser</strong> using Chrome's extension storage.</li>
+    <li>If you choose to connect Google Drive, your data is backed up <strong>only to your own private Google Drive app-data space</strong> — a hidden folder tied to this extension that no other app, and no server operated by us, can access.</li>
+    <li>Motimer does <strong>not</strong> store your personal task data on any server we operate. A lightweight relay is used solely to check subscription status — see Section 2.5.</li>
+    <li>Motimer does <strong>not</strong> sell, rent, or share your data with third parties, and does not use your data for advertising.</li>
+  </ul>
 
-<h3>2.3 Settings you provide</h3>
-<p>Information you type into Motimer's settings screen (such as an optional pay rate, currency, and notification preferences) is stored locally on your device only.</p>
+  <h2>2. Information We Access and Why</h2>
 
-<h3>2.4 Website access (TryRating.com)</h3>
-<p>Motimer's content script runs only on <code>tryrating.com</code> pages. It reads on-page task information (as described in 2.1) purely to power the timer and dashboard. It does not track your browsing on any other website.</p>
+  <h3>2.1 Task and timing data (stored locally)</h3>
+  <p>When you use TryRating.com with Motimer installed, the Extension reads publicly visible page content (such as Task ID, Request ID, task type, and estimated response time) to:</p>
+  <ul>
+    <li>Start and stop timers automatically.</li>
+    <li>Record submission history for your personal dashboard.</li>
+    <li>Show ERT ("Estimated Rating Time") warnings and reminders.</li>
+  </ul>
+  <p>This information is stored <strong>only in your local browser storage</strong> (<code>chrome.storage.local</code>). It is never transmitted to any server we control.</p>
 
-<h2>3. Information We Do NOT Collect</h2>
-<p>Motimer does <strong>not</strong>:</p>
-<ul>
-<li>Operate any server that receives your data.</li>
-<li>Track your browsing activity outside of TryRating.com.</li>
-<li>Collect analytics, telemetry, or usage statistics.</li>
-<li>Share, sell, or rent any data to third parties or advertisers.</li>
-<li>Access any Google Drive files or folders outside its own private app-data space.</li>
-</ul>
+  <h3>2.2 Google Account information (optional — only if you connect Google)</h3>
+  <p>Motimer can optionally connect to your Google Account to enable backup features. This requires your explicit, separate consent via Google's sign-in screen, and can be disconnected at any time from the Motimer settings page.</p>
 
-<h2>4. Data Storage and Security</h2>
-<ul>
-<li><strong>Local data</strong> is stored using Chrome's built-in extension storage APIs, sandboxed to your browser profile and this extension only.</li>
-<li><strong>Cloud backup data</strong> (if you opt in) is stored exclusively in your own Google Drive appDataFolder, protected by your Google Account's own security.</li>
-<li>All communication with Google APIs occurs over encrypted HTTPS connections.</li>
-</ul>
+  <p><strong>a) Google Drive backup (<code>drive.appdata</code> scope)</strong></p>
+  <ul>
+    <li>Used to back up and restore your task history, settings, and notes.</li>
+    <li>Data is written <strong>only</strong> to your Google Drive's hidden "Application Data" folder — a private space associated exclusively with this extension. You cannot see or browse this folder from the normal Google Drive interface, and no other application can read it.</li>
+    <li>This is a direct connection between your browser and Google's servers. Motimer's developer never receives, stores, or has access to a copy of this data.</li>
+  </ul>
 
-<h2>5. Data Retention and Deletion</h2>
-<ul>
-<li>You can clear all locally stored data at any time by removing the extension or clearing its storage from your browser's extension settings.</li>
-<li>You can disconnect your Google Account at any time from Motimer's settings; this revokes the Extension's access token and stops any further Drive activity.</li>
-<li>To delete your Drive backup, disconnect the Google Account connection and then revoke Motimer's access from your Google Account's <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Third-Party Apps &amp; Services</a> page; this permanently deletes the app-data folder associated with the Extension.</li>
-</ul>
+  <p><strong>b) Basic profile info (<code>userinfo.email</code> scope)</strong></p>
+  <ul>
+    <li>Used only to display which Google account is currently connected inside the Extension's settings UI (e.g., "Connected as name@example.com").</li>
+  </ul>
 
-<h2>6. Children's Privacy</h2>
-<p>Motimer is not directed at children and is not intended for use by anyone under the age of 13. We do not knowingly collect data from children.</p>
+  <h3>2.3 Settings you provide</h3>
+  <p>Information you type into Motimer's settings screen (such as an optional pay rate, currency, and notification preferences) is stored locally on your device only.</p>
 
-<h2>7. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time to reflect changes in the Extension's functionality or legal requirements. The "Last updated" date at the top of this page will reflect the most recent revision. Continued use of Motimer after changes take effect constitutes acceptance of the revised policy.</p>
+  <h3>2.4 Website access (TryRating.com)</h3>
+  <p>Motimer's content script runs only on <code>tryrating.com</code> pages. It reads on-page task information (as described in 2.1) purely to power the timer and dashboard. It does not track your browsing on any other website.</p>
 
-<h2>8. Contact Us</h2>
-<p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact:</p>
-<p><strong>Developer:</strong> Mohamed Saad<br>
-<strong>Email:</strong> <a href="mailto:mohamedsaadgt@gmail.com">mohamedsaadgt@gmail.com</a></p>
+  <h3>2.5 Subscription and license data (Polar.sh)</h3>
+  <p>Motimer uses Polar.sh as a third-party payment and licensing provider to manage Pro subscriptions and license keys.</p>
+  <ul>
+    <li>When you subscribe or activate a license key, Polar.sh processes your payment and issues a license key. Motimer's developer does not receive or store your payment card details — these are handled entirely by Polar.sh under its own privacy policy.</li>
+    <li>To check whether your subscription is active, the Extension sends your license key to our Cloudflare Worker (<code>motimer-sucess.amohamedpsaad.workers.dev</code>), which looks up your subscription status with Polar.sh and returns only non-sensitive status information (e.g., active/inactive, renewal date) back to the Extension. This Worker does not store your license key or any personal data — it relays the check in real time.</li>
+    <li>Your email address may be used by Polar.sh to send purchase confirmations, receipts, and to let you manage your subscription via the Polar customer portal.</li>
+  </ul>
+  <p>See Polar.sh's own privacy policy at <a href="https://polar.sh/legal/privacy" target="_blank" rel="noopener">polar.sh/legal/privacy</a> for how they handle payment data.</p>
 
-<footer>
-This document is the official Privacy Policy for the Motimer browser extension, provided for Google OAuth verification and general transparency with users.
-</footer>
+  <h2>3. Information We Do NOT Collect</h2>
+  <p>Motimer does <strong>not</strong>:</p>
+  <ul>
+    <li>Operate any server that stores your personal task or account data. (A lightweight relay server is used solely to check subscription status via Polar.sh — see Section 2.5 — and does not store your data.)</li>
+    <li>Track your browsing activity outside of TryRating.com.</li>
+    <li>Collect analytics, telemetry, or usage statistics.</li>
+    <li>Share, sell, or rent any data to third parties or advertisers.</li>
+    <li>Access any Google Drive files or folders outside its own private app-data space.</li>
+  </ul>
+
+  <h2>4. Data Storage and Security</h2>
+  <ul>
+    <li><strong>Local data</strong> is stored using Chrome's built-in extension storage APIs, sandboxed to your browser profile and this extension only.</li>
+    <li><strong>Cloud backup data</strong> (if you opt in) is stored exclusively in your own Google Drive appDataFolder, protected by your Google Account's own security.</li>
+    <li>All communication with Google APIs and with our subscription-status relay occurs over encrypted HTTPS connections.</li>
+  </ul>
+
+  <h2>5. Data Retention and Deletion</h2>
+  <ul>
+    <li>You can clear all locally stored data at any time by removing the extension or clearing its storage from your browser's extension settings.</li>
+    <li>You can disconnect your Google Account at any time from Motimer's settings; this revokes the Extension's access token and stops any further Drive activity.</li>
+    <li>To delete your Drive backup, disconnect the Google Account connection and then revoke Motimer's access from your Google Account's <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Third-Party Apps &amp; Services</a> page; this permanently deletes the app-data folder associated with the Extension.</li>
+  </ul>
+
+  <h2>6. Children's Privacy</h2>
+  <p>Motimer is not directed at children and is not intended for use by anyone under the age of 13. We do not knowingly collect data from children.</p>
+
+  <h2>7. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time to reflect changes in the Extension's functionality or legal requirements. The "Last updated" date at the top of this page will reflect the most recent revision. Continued use of Motimer after changes take effect constitutes acceptance of the revised policy.</p>
+
+  <h2>8. Contact Us</h2>
+  <div class="contact-card">
+    <p><strong>Developer:</strong> Mohamed Saad</p>
+    <p><strong>Email:</strong> <a href="mailto:privacy@motimer.online">privacy@motimer.online</a></p>
+  </div>
+
+  <div class="footnote">
+    This document is the official Privacy Policy for the Motimer browser extension, provided for Google OAuth verification and general transparency with users.
+  </div>
+
 </div>
 </body>
 </html>
